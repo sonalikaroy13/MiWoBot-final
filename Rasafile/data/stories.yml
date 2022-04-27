@@ -1,0 +1,353 @@
+version: "3.1"
+
+stories:
+
+- story: delhi job search path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: searching_for_job
+  - action: utter_searching_for_job
+  - intent: Delhi
+  - action: utter_district
+  - intent: district
+  - action: utter_help
+
+- story: delhi job search path hindi
+  steps:
+  - intent: greet_hindi
+  - action: utter_greet_hindi
+  - intent: searching_for_job
+  - action: utter_searching_for_job
+  - intent: Delhi
+  - action: utter_district
+  - intent: district
+  - action: utter_help
+# ////////////////////////
+- story: delhi job search path 1
+  steps:
+  - intent: greet_hindi
+  - action: utter_greet_hindi
+  - intent: ask_mood_hindi
+  - action: utter_greet_hindi
+  - intent: goodbye_hindi
+  - action: utter_greet_hindi
+  - intent: affirm_hindi
+  - action: utter_greet_hindi
+
+
+# - story: delhi job search path
+#   steps:
+#   - intent: greet_hindi
+#   - action: utter_greet_hindi
+#   - intent: searching_for_job
+#   - action: utter_searching_for_job
+#   - intent: Delhi
+#   - action: utter_district
+#   - intent: district
+#   - action: utter_help
+#
+#
+# - story: delhi job search path
+#   steps:
+#   - intent: greet_hindi
+#   - action: utter_greet_hindi
+#   - intent: searching_for_job
+#   - action: utter_searching_for_job
+#   - intent: Delhi
+#   - action: utter_district
+#   - intent: district
+#   - action: utter_help
+
+#csv file NGOs
+#- story: user query
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: csv
+#  - action: action_csv
+#  - intent: goodbye
+#  - action: utter_goodbye
+
+- story: outside job search path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: searching_for_job
+  - action: utter_searching_for_job
+  - intent: Outside_Delhi
+  - action: utter_national_help
+
+- story: problem in job path maternity
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: problem_in_current_job
+  - action: utter_problem_in_current_job
+  - intent: law_maternity
+  - action: utter_law_maternity
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: problem in job path wages
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: problem_in_current_job
+  - action: utter_problem_in_current_job
+  - intent: law_wages
+  - action: utter_law_wages
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: problem in job path compensation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: problem_in_current_job
+  - action: utter_problem_in_current_job
+  - intent: law_compensation
+  - action: utter_law_compensation
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: problem in job path remuneration
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: problem_in_current_job
+  - action: utter_problem_in_current_job
+  - intent: law_remuneration
+  - action: utter_law_remuneration
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: problem in job path minimum wage
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: problem_in_current_job
+  - action: utter_problem_in_current_job
+  - intent: law_minimum
+  - action: utter_law_minimum
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: problem in job path interstate migrant
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: problem_in_current_job
+  - action: utter_problem_in_current_job
+  - intent: law_interstate_migrant
+  - action: utter_interstate_migrant
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: scheme IGNOAP yes
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: IGNOAP
+  - action: utter_IGNOAP
+  - intent: affirm
+  - action: utter_scheme_help
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: scheme IGNOAP no
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: IGNOAP
+  - action: utter_IGNOAP
+  - intent: deny
+  - action: utter_goodbye
+
+- story: scheme AABY yes
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: AABY
+  - action: utter_AABY
+  - intent: affirm
+  - action: utter_scheme_help
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: scheme AABY no
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: AABY
+  - action: utter_AABY
+  - intent: deny
+  - action: utter_goodbye
+
+- story: scheme RSBY yes
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: RSBY
+  - action: utter_RSBY
+  - intent: affirm
+  - action: utter_scheme_help
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: scheme RSBY no
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: RSBY
+  - action: utter_RSBY
+  - intent: deny
+  - action: utter_goodbye
+
+- story: scheme MGBBY yes
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: MGBBY
+  - action: utter_MGBBY
+  - intent: affirm
+  - action: utter_scheme_help
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: scheme MGBBY no
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: MGBBY
+  - action: utter_MGBBY
+  - intent: deny
+  - action: utter_goodbye
+
+- story: delhi acco other path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: acco_other
+  - action: utter_acco_other
+  - intent: Delhi
+  - action: utter_district
+  - intent: district
+  - action: utter_help
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: outside acco other path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: acco_other
+  - action: utter_acco_other
+  - intent: Outside_Delhi
+  - action: utter_national_help
+
+
+
+# # ----------
+
+# - story: story with a form
+#   steps:
+#   - intent: find_restaurant
+#   - action: restaurant_form                # Activate the form
+#   - active_loop: restaurant_form           # This form is currently active
+#   - active_loop: null                      # Form complete, no form is active
+#   - action: utter_restaurant_found
+
+# - story: story with a slot
+#   steps:
+#   - intent: celebrate_bot
+#   - slot_was_set:
+#     - feedback_value: positive
+#   - action: utter_yay
+
+# - story: The user just arrived from another city.
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: inform_location
+#       entities:
+#         - city: London
+#           role: from
+#     - action: utter_ask_about_trip
+
+# - story: The user is going to another city.
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: inform_location
+#       entities:
+#         - city: Madrid
+#           role: to
+#     - action: utter_wish_pleasant_stay
+
+# - story: collect restaurant booking info  # name of the story - just for debugging
+#   steps:
+#   - intent: greet                         # user message with no entities
+#   - action: utter_ask_howcanhelp
+#   - intent: inform                        # user message with no entities
+#     entities:
+#     - location: "rome"
+#     - price: "cheap"
+#   - action: utter_on_it                  # action that the bot should execute
+#   - action: utter_ask_cuisine
+#   - intent: inform
+#     entities:
+#     - cuisine: "spanish"
+#   - action: utter_ask_num_people
+
+# # Checkpoints are ways to connect stories together.
+# # at begining or end
+
+# - story: story_with_a_checkpoint_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - checkpoint: greet_checkpoint
+
+# - story: story_with_a_checkpoint_2
+#   steps:
+#   - checkpoint: greet_checkpoint
+#   - intent: book_flight
+#   - action: action_book_flight
+
+# - story: story_with_a_conditional_checkpoint
+#   steps:
+#   - checkpoint: greet_checkpoint
+#     # This checkpoint should only apply if slots are set to the specified value
+#     slot_was_set:
+#     - context_scenario: holiday
+#     - holiday_name: thanksgiving
+#   - intent: greet
+#   - action: utter_greet_thanksgiving
+
+# # OR statement
+# # or steps are ways to handle multiple intents the same way, without writing a separate story for each intent.
+# - story: story with OR
+#   steps:
+#   - intent: signup_newsletter
+#   - action: utter_ask_confirm
+#   - or:
+#     - intent: affirm
+#     - intent: thanks
+#   - action: action_signup_newsletter

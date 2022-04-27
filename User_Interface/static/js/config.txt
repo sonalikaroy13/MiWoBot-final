@@ -1,0 +1,5 @@
+Number of ports on which different bots are running
+
+Banking : port 5005 , action : 5050
+General : port 5010 , action : 5060 
+Medical : port 5020 , action : 5070

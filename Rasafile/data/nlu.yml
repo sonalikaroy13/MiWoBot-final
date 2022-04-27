@@ -1,0 +1,423 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - how can you help me?
+    - what you can do?
+    - what can you do?
+    - what is your job?
+    - how do you work?
+
+- intent: searching_for_job
+  examples: |
+    - 1
+    - one
+    - option 1
+    - first
+    - first option
+    - I want a job
+    - I need a job
+    - searching for a job
+    - job search
+    - search job
+    - can you find a job?
+    - I am in search for a job
+    - Please find me a job
+    - I am not getting any job
+
+- intent: problem_in_current_job
+  examples: |
+    - 2
+    - two
+    - option 2
+    - second one
+    - second
+    - second option
+    - I am not happy with my job
+    - problems
+    - problems in job
+    - problems in current job
+    - I am having some problems in my current organization
+    - i have issues with my employer
+    - I am not getting my salary
+- intent: schemes
+  examples: |
+    - 3
+    - three
+    - option 3
+    - third one
+    - third
+    - third option
+    - government schemes
+    - schemes
+    - I want to know about government schemes
+    - Tell me about some government schemes
+
+- intent: acco_other
+  examples: |
+    - 4
+    - four
+    - option 4
+    - fourth one
+    - fourth
+    - fourth option
+    - other
+    - Other
+    - others
+    - accommodation
+    - Accommodation
+    - I am in search of home
+    - I need a home to live
+    - none
+    - other problem
+- intent: Delhi
+  examples: |
+    - Delhi
+    - Dilli
+    - delhi
+    - dilli
+
+- intent: Outside_Delhi
+  examples: |
+    - Outside
+    - outside
+    - Outside Delhi
+    - Bangalore
+    - UP
+    - Uttar Pradesh
+    - Haryana
+    - Punjab
+    - Bihar
+    - Jharkhand
+    - Mumbai
+    - Maharashtra
+    - MP
+    - Rajasthan
+    - Madhya Pradesh
+    - Gujarat
+    - Kerala
+    - Tamil Nadu
+    - Karnataka
+    - Jammu
+    - Kashmir
+    - Mumbai
+    - Kolkata
+    - Himachal
+    - Orissa
+    - Chhattisgarh
+    - Chennai
+    - Manipur
+    - Assam
+    - Tripura
+    - Meghalaya
+    - Mizoram
+    - Nagaland
+    - Ladakh
+    - Goa
+
+- intent: district
+  examples: |
+    - New Delhi
+    - Central Delhi
+    - East Delhi
+    - North Delhi
+    - North East Delhi
+    - North West Delhi
+    - South Delhi
+    - South East Delhi
+    - South West Delhi
+    - West Delhi
+    - Shahadra district
+
+- intent: greet_hindi
+  examples: |
+    - नमस्ते
+    - क्या हाल है?
+#    - [district]{"entity":"column","value":"district"}
+#    - [district]{"entity":"column","value":"district"} Delhi
+- intent: get_weather_hindi
+  examples: |
+    - मौंसम क्या है
+    - बाहर कैसा है
+    - मौसम की रिपोर्ट
+    - क्या बारिश की कोई संभावना नागपुर में है?
+    - आज यह बाहर की तरह क्या है
+    - बाहर का तापमान क्या है?
+    - नागपुर में मौसम कैसा है
+    - मुंबई में मौसम क्या है
+    - मौसम कैसा है पटना
+    - शेहोन की मौसम रिपोर्ट को व्हाट्सएप करें
+
+- intent: ask_mood_hindi
+  examples: |
+    - क्या हाल है?
+    - तुम कैसे हो?
+    - आप कैसे हो
+    - क्या आप ठीक हैं
+    - आप ठिक हो
+    - क्या चल रहा है
+
+- intent: goodbye_hindi
+  examples: |
+    - अलविदा
+    - बाद में मिलते है
+    - फिर मिलते हैं
+    - बाई
+
+- intent: affirm_hindi
+  examples: |
+    - हाँ
+    - वास्तव में
+    - बेशक
+    - वह अच्छा प्रतीत होता है
+    - सही बात
+    - ठीक
+    - अच्छा है
+
+#- intent: csv
+#  examples: |
+#   - file
+#   - test
+#   - Test
+
+- intent: law_maternity
+  examples: |
+    - I was pregnant and my employer removed me from the work
+    - I was on maternity leave and was not paid for that time
+    - I was pregnant and was not paid
+    - I was on leave due to pregnancy and my employer removed me from work
+    - I was on leave due to pregnancy and employer gave me notice and no money
+- intent: law_wages
+  examples: |
+    - My employer paid me in invalid currency notes and is not listening
+    - My employer fired me and did not pay me for remaining days of work
+    - My employer has not paid me in a month
+    - I have not been paid my salary in a month
+    - My employer has deducted a lot of money from my salary
+    - My employer has put invalid fines on my salary
+- intent: law_compensation
+  examples: |
+    - I was in an accident while working but havent been given any money for it
+    - I got a disease due to the work but havent been paid
+    - My relative died while working and we havent been paid
+    - My relative passed away while working and we havent got any money
+    - I got injured while working here and my employer hasnt paid any money
+    - I need money for operation for an accident I got in while working
+- intent: law_remuneration
+  examples: |
+    - I am getting less pay than my co-workers
+    - I am a woman and am getting less pay than men
+    - I am getting less pay than others for the same work
+    - I am facing discrimination and not getting an equal pay
+    - I am not getting equally paid as everyone
+    - I am not being paid what was decided earlier
+- intent: law_minimum
+  examples: |
+    - I am not getting paid for overtime
+    - I am being forced to work extra without any pay
+    - We are getting less pay than the rate in market
+    - Employer is not paying according to the rate
+    - Employer is not paying appropriate salary according to rate
+- intent: law_interstate_migrant
+  examples: |
+    - I am a migrant worker
+    - I have migrated from
+    - I came here from other state
+    - I am not from this state
+    - I am migrant. I came here through a contractor
+    - I am migrant. I came here through a contractor, but now they are not fulfilling their promises.
+
+- intent: IGNOAP
+  examples: |
+    - indira gandhi
+    - indira gandhi national old age pension scheme
+    - old age pension
+    - pension
+    - national old age pension
+- intent: AABY
+  examples: |
+    - aam aadmi bima yojana
+    - aam aadmi yojana
+    - aam aadmi
+    - aam aadmi bima yojna
+    - aam aadmi yojna
+- intent: RSBY
+  examples: |
+    - rashtriya swasthya bima yojana
+    - rashtriya swasthya
+    - swasthya yojana
+    - swasthya bima
+- intent: MGBBY
+  examples: |
+    - mahatma gandhi bunkar bima yojana
+    - mahatma gandhi yojana
+    - bunkar bima yojana
+    - bunkar yojana
+    - bunkar
+- intent: go_back
+  examples: |
+    - go back
+    - please go back
+    - go back to starting
+    - repeat
+    - please repeat
+    - please go to first question
+    - go to first question
+    - ask it again
+    - start again
+    - sorry
+    - please go back to first question
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - thank you
+    - thanks for helping!
+    - okay
+    - ok
+    - ok thanks
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yup
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - no thanks
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+
+
+
+
+
+
+
+# - intent: subscribe
+#  examples: |
+#    - I want to get the newsletter
+#    - Can you send me the newsletter?
+#    - Can you sign me up for the newsletter?
+
+#- intent: inform
+#  examples: |
+#    - My email is example@example.com
+#    - random@example.com
+#    - Please send it to anything@example.com
+#    - Email is something@example.com
+
+#- intent: ask_name
+#  examples: |
+#    - my name is sumit
+#    - people call me lalit
+#    - vineet kumar
+#    - vipin} is my name
+#    - I am shivam
+
+#- intent: ask_time
+#  examples: |
+#    - what time is it right now?
+#    - what day is it today?
+#    - what's today?
+#    - what's yesterday?
+
+
+# # ------
+
+# - intent: check_balance
+#   examples: |
+#     - What's my [credit](account) balance?
+#     - What's the balance on my [credit card account]{"entity":"account","value":"credit"}
+
+# - synonym: credit
+#   examples: |
+#     - credit card account
+#     - credit account
+
+# nlu:
+# - regex: account_number
+#   examples: |
+#     - \d{10,12}
+
+# - lookup: banks
+#   examples: |
+#     - JPMC
+#     - Comerica
+#     - Bank of America
+
+# - intent: chitchat/ask_name
+#   examples: |
+#     - What is your name?
+#     - May I know your name?
+#     - What do people call you?
+#     - Do you have a name for yourself?
+
+
+# - intent: chitchat/ask_weather
+#   examples: |
+#     - What's the weather like today?
+#     - Does it look sunny outside today?
+#     - Oh, do you mind checking the weather for me please?
+#     - I like sunny days in Berlin.
+
+# - intent: check_balance
+#   examples: |
+#     - how much do I have on my [savings]("account") account
+#     - how much money is in my [checking]{"entity": "account"} account
+#     - What's the balance on my [credit card account]{"entity":"account","value":"credit"}
+#     - I want to fly from [Berlin]{"entity": "city", "role": "departure"} to [San Francisco]{"entity": "city", "role": "destination"}.
+#     - Give me a [small]{"entity": "size", "group": "1"} pizza with [mushrooms]{"entity": "topping", "group": "1"} and a [large]{"entity": "size", "group": "2"} [pepperoni]{"entity": "topping", "group": "2"}
+
+
+# # Ignoring Entities for Certain Intents
+
+# - greet:
+#     use_entities: []  # ignore all entities for certain intents
+
+
+# - greet:   # To ignore some entities
+#     use_entities:
+#       - name
+#       - first_name
+#     ignore_entities:
+#       - location
+#       - age
