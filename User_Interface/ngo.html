@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="icon" href=" " />
@@ -15,6 +13,10 @@
     <!-- CSS Files -->
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap"
+          rel="stylesheet" />
     <link href="CSS/loaders.css" rel="stylesheet" />
     <link href="CSS/swiper.min.css" rel="stylesheet" />
     <link href="CSS/animate.min.css" rel="stylesheet" />
@@ -24,28 +26,55 @@
     <link rel="stylesheet" href="CSS/flaticon.css" />
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="CSS/glider.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css" />
 
     <!-- Main Stylesheet File -->
     <link href="CSS/style.css" rel="stylesheet" />
 
-    <title>MiWo - Laws</title>
+<!-- chatbot code -->
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
+
+    <!--Import Font Awesome Icon Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+    <!--Import materialize.css-->
+    <!--<link rel="stylesheet" type="text/css" href=".\static\css\materialize.min.css"> -->
+
+    <!--Main css-->
+    <link rel="stylesheet" type="text/css" href=".\static\css\style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--Chatbot code-->
+
+    <!--Google translator-->
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
+    <title>MiWo - NGOs</title>
   </head>
   <body>
     <!-- Top Navigation -->
 
     <header>
       <div class="language">
-        <p class="lang">
+        <div id="google_element" style="align-items: right;"></div>
+        <!--<p class="lang">
           Language
-          <select>
-            <option value="100x50">English</option>
-            <option value="200x75">हिन्दी</option>
+           <a href="#" language="english">English</a>
+          <a href="#" language="hindi">Hindi</a> 
+          <select id="lang-list" onchange="changeLanguage(this)">
+            <option value="english" language="english">English</option>
+            <option value="hindi" language="hindi">हिन्दी</option>
           </select>
-        </p>
+        </p>-->
       </div>
       <div class="top-name row">
         <div
@@ -54,8 +83,8 @@
           <img class="lac-logo" src="Images/mglogo.png" />
         </div>
         <!-- <div class="univ col-lg-6 col-md-6 col-sm-12">
-            <img class="univ-logo" src="Images/univ.png" />
-          </div> -->
+          <img class="univ-logo" src="Images/univ.png" />
+        </div> -->
       </div>
     </header>
 
@@ -259,45 +288,172 @@
 
     <div id="loader" class="show fullscreen">
       <svg class="circular" width="48px" height="48px">
-        <circle
-          class="path-bg"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke="#eeeeee"
-        />
-        <circle
-          class="path"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke-miterlimit="10"
-          stroke="#F96D00"
-        />
+          <circle class="path-bg"
+                  cx="24"
+                  cy="24"
+                  r="22"
+                  fill="none"
+                  stroke-width="4"
+                  stroke="#eeeeee" />
+          <circle class="path"
+                  cx="24"
+                  cy="24"
+                  r="22"
+                  fill="none"
+                  stroke-width="4"
+                  stroke-miterlimit="10"
+                  stroke="#F96D00" />
       </svg>
-    </div>
+  </div>
 
-    <!-- The End! -->
+  <!-- The End! -->
+  <!-- Optional JavaScript -->
 
-    <!-- Optional JavaScript -->
+  <!--Google Translator-->
+  <script>
+      function loadGoogleTranslate() {
+        new google.translate.TranslateElement("google_element");
+      }
+    </script>  
 
-    <script src="js/popper.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script src="lib/jquery/jquery.dlmenu.js"></script>
-    <script src="lib/counterup/jquery.waypoints.min.js"></script>
-    <script src="lib/counterup/jquery.counterup.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/jquery.fancybox.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/scrollPosStyler.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/glider.min.js"></script>
-  </body>
+  <script src="js/popper.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="lib/jquery/jquery.dlmenu.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/jquery/jquery.fancybox.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/scrollPosStyler.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/glider.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+      $(".owl-carousel").owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 2000, //2000=2s
+          margin: 10,
+          responsive: {
+              0: {
+                  items: 1,
+              },
+              600: {
+                  items: 3,
+              },
+              1000: {
+                  items: 4,
+              },
+          },
+      });
+
+      // where content needs to be put
+    const abtTitle = document.querySelector(".about-title");
+    const abtContent = document.querySelector(".about-content");
+    const pltTitle = document.querySelector(".plight-title");
+    const pltContent = document.querySelector(".plight-content");
+    
+  // on toggling the language dropdown
+    function changeLanguage(el) {
+      console.log("inside");
+      const attr = el.value;
+      abtTitle.innerHTML = data[attr].aboutTitle;
+      abtContent.innerHTML = data[attr].aboutContent;
+      pltTitle.innerHTML = data[attr].plightTitle;
+      pltContent.innerHTML = data[attr].plightContent;
+    }
+
+    // content in eng and hindi
+    var data = {
+      english: {
+        aboutTitle:
+          ' About <span class="text-warning">Migrant Workers</span>',
+        aboutContent:
+          "Lets understand who these migrant workers are. This is the section of society that works seasonally or moves around to different areas looking for employment, which is often temporary. These workers rarely get any benefits and are often financially exploited. It's important to note that although the actual conditions and minimal resources accessible to migrant workers came to light during the pandemic because suddenly the conditions were so dire that survival became difficult, these workers have been living these underprivileged oppressed lives for a very long duration.<br /> <br />With growing technology and awareness, it becomes essential that enough light is shed on their lives and proper mechanisms are established to overcome the difficulties they have been facing for the longest time. There are a lot of aspects of laws, activism, and opportunities that these workers are not even aware of. The government and various other organizations have taken steps to safeguard their interests, but these workers do not know of it. Through this voice bot, there is a possibility that these acquired resources can become more accessible if all the information is in one place, stored systematically, and is easily available.",
+        plightTitle:
+          'The <span class="text-warning">Plight </span>of Migrant Workers',
+        plightContent:"Even though a majority of the migrant workers in the society are regarded as unskilled, they do several important tasks and thus play an important role in the Indian Economy. On 30th January 2020, India officially recorded its first Covid 19 positive case, and a lockdown had to be imposed in March of 2020. This resulted in all construction work stopping and all the factories were immediately shut down, directly impacting the lives of millions of migrant workers who still live on daily wages. March 2020 was the first time when India finally understood the reality of these workers’ lives when they had nowhere to go, no transportation, and no livelihood.<br /><br />It’s not like these migrant workers don’t deal with atrocities in their normal lives but it’s just that this time their heart-wrenching reality was finally being highlighted under these dire circumstances. People were forced to walk miles to just get back home. Children, the elderly, disabled people, everyone suffered and eventually the people of India witnessed how bound these workers must feel regularly, just to survive. Any luxury is a dream and they have been deprived of the essentials like sanitation and minimum wage for ages with no agency and no help whatsoever. This is the ground reality of these workers and these are the conditions they have been living in thus far. It is high time people start acknowledging the situation and find a way to help them. This has often been overlooked and constructive action is required in this sector urgently."
+
+      },
+      hindi: {
+        aboutTitle:
+          'कौन होते हैं <span class="text-warning">प्रवासी श्रमिक</span>',
+        aboutContent:
+          '<p id="con-hindi">आइए समझते हैं कौन हैं ये प्रवासी मजदूर। यह समाज का वह वर्ग है जो मौसमी रूप से काम करता है या इधर-उधर घूमता रहता है विभिन्न क्षेत्रों में रोजगार की तलाश है, जो अक्सर अस्थायी। इन श्रमिकों को शायद ही कभी कोई लाभ मिलता है और अक्सर आर्थिक शोषण किया। यह ध्यान रखना महत्वपूर्ण है कि यद्यपि वास्तविक स्थितियाँ और न्यूनतम संसाधन जो प्रवासी के लिए सुलभ हों महामारी के दौरान कार्यकर्ता प्रकाश में आए क्योंकि अचानक हालात इतने विकट थे कि जीना मुश्किल हो गया, ये मजदूर इन वंचित उत्पीड़ित जीवन जी रहे हैं बहुत लंबी अवधि के लिए।<br /><br /> बढ़ती प्रौद्योगिकी और जागरूकता के साथ, यह आवश्यक हो जाता है कि उनके जीवन पर पर्याप्त प्रकाश डाला जाए और उन कठिनाइयों को दूर करने के लिए उचित तंत्र स्थापित किया जाए जिनका वे लंबे समय से सामना कर रहे हैं। कानूनों, सक्रियता और अवसरों के बहुत सारे पहलू हैं जिनके बारे में इन श्रमिकों को पता भी नहीं है। सरकार और विभिन्न अन्य संगठनों ने उनके हितों की रक्षा के लिए कदम उठाए हैं, लेकिन इन श्रमिकों को इसकी जानकारी नहीं है। इस वॉयस बॉट के माध्यम से, एक संभावना है कि ये अर्जित संसाधन अधिक सुलभ हो सकते हैं यदि सभी जानकारी एक ही स्थान पर, व्यवस्थित रूप से संग्रहीत और आसानी से उपलब्ध हो। </p>',
+        plightTitle:
+          'प्रवासी श्रमिकों का <span class="text-warning">दर्द</span>',
+        plightContent:
+          '<p id="con-hindi">भले ही समाज में अधिकांश प्रवासी श्रमिकों को अकुशल माना जाता है, वे कई महत्वपूर्ण कार्य करते हैं और इस प्रकार भारतीय अर्थव्यवस्था में एक महत्वपूर्ण भूमिका निभाते हैं। 30 जनवरी 2020 को, भारत ने आधिकारिक तौर पर अपना पहला कोविड 19 सकारात्मक मामला दर्ज किया, और 2020 के मार्च में एक लॉकडाउन लगाया जाना था। इसके परिणामस्वरूप सभी निर्माण कार्य रुक गए और सभी कारखाने तुरंत बंद हो गए, जिसका लाखों लोगों के जीवन पर सीधा प्रभाव पड़ा। प्रवासी श्रमिक जो अभी भी दैनिक मजदूरी पर रहते हैं। मार्च 2020 पहली बार था जब भारत ने आखिरकार इन श्रमिकों के जीवन की वास्तविकता को समझा जब उनके पास जाने के लिए कोई रास्ता नहीं था, कोई परिवहन नहीं था और कोई आजीविका नहीं थी।<br /><br /> ऐसा नहीं है कि ये प्रवासी श्रमिक अपने सामान्य जीवन में अत्याचारों का सामना नहीं करते हैं, लेकिन यह सिर्फ इतना है कि इस बार उनकी दिल दहला देने वाली वास्तविकता को इन विकट परिस्थितियों में उजागर किया जा रहा था। लोग घर वापस आने के लिए मीलों पैदल चलने को मजबूर हैं। कोई भी विलासिता एक सपना है और वे बिना किसी एजेंसी और बिना किसी मदद के स्वच्छता और न्यूनतम मजदूरी जैसी आवश्यक चीजों से वंचित रहे हैं। यह इन मजदूरों की जमीनी हकीकत है और यही हालात वे अब तक जी रहे हैं। अब समय आ गया है कि लोग स्थिति को स्वीकार करना शुरू करें और उनकी मदद करने का तरीका खोजें। इसे अक्सर अनदेखा कर दिया गया है और इस क्षेत्र में तत्काल रचनात्मक कार्रवाई की आवश्यकता है।</p>',
+          
+      },
+    };
+  </script>
+  </script>
+
+<!-- chatbot files -->
+  <div class="container">
+      <!-- Modal for rendering the charts, declare this if you want to render charts,
+      else you remove the modal -->
+      <div id="modal1" class="modal">
+          <canvas id="modal-chart"></canvas>
+      </div>
+
+      <!--chatbot widget -->
+      <div class="widget">
+          <div class="chat_header">
+
+
+              <!--Add the name of the bot here -->
+              <span class="chat_header_title">MiWo-Voice-Bot</span>
+              <span class="dropdown-trigger" href='#' data-target='dropdown1'>
+                  <i class="material-icons">
+                      more_vert
+                  </i>
+              </span>
+
+
+              <!-- Dropdown menu-->
+              <ul id='dropdown1' class='dropdown-content'>
+                  <li><a href="#" id="clear">Clear</a></li>
+                  <li><a href="#" id="restart">Restart</a></li>
+                  <li><a href="#" id="close">Close</a></li>
+              </ul>
+          </div>
+
+          <!--Chatbot contents goes here -->
+          <div class="chats" id="chats">
+              <div class="clearfix"></div>
+
+          </div>
+
+          <!--keypad for user to type the message -->
+          <div class="keypad">
+              <textarea id="userInput" placeholder="Type a message..." class="usrInput" value="not set"></textarea>
+              <div id="sendButton"><i class="fa fa-microphone" onclick="record()" aria-hidden="true"></i></div>
+              <div>select language: <button id="hin" onclick="langu()" style="width:55px;height:20px;border-radius: 10px;background-color:#8f00cc;color: white;">Hindi</button> <button id="eng" onclick="langu1()" style="width:70px;height:20px;border-radius: 10px;background-color: #8f00cc;color: white;">English</button> </div>
+
+          </div>
+      </div>
+
+      <!--bot profile-->
+      <div class="profile_div" id="profile_div">
+          <img class="imgProfile" src=".\template\static\img\botAvatar.png" />
+      </div>
+  </div>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src=".\static\js\materialize.min.js"></script>
+
+  <!--Main Script -->
+  <script type="text/javascript" src=".\static\js\script.js"></script>
+
+  <!--Chart.js Script -->
+  <script type="text/javascript" src=".\static\js\chart.min.js"></script>
+<!--chatbot file -->
+  
+</body>
 </html>
