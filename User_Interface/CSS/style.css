@@ -161,10 +161,10 @@ a {
 
 .sub-navigation {
   display: none;
-  text-align: left;
-  width: 160px;
-  position: absolute;
-  left: 0px;
+  text-align: center;
+  width: max-content;
+  position:absolute;
+  left: 0;
   top: 48px;
   z-index: 999999;
   /* border-right: 1px solid #fff; */
@@ -293,7 +293,7 @@ a {
 }
 
 .dl-menuwrapper button {
-  background: #e51d1d;
+  background: #f5a623;
   border: none;
   width: 35px;
   height: 35px;
