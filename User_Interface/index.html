@@ -47,7 +47,8 @@
     <!--<link rel="stylesheet" type="text/css" href=".\static\css\materialize.min.css"> -->
 
     <!--Main css-->
-    <link rel="stylesheet" type="text/css" href=".\static\css\style.css">
+    <!-- <link rel="stylesheet" type="text/css" href=".\static\css\style.css"> -->
+    <link rel="stylesheet" type="text/css" href=".\template\static\css\style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta charset="UTF-8">
@@ -59,6 +60,25 @@
     <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
 
     <title>MiWo - Home</title>
+
+    <style>
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          padding: 12px 16px;
+          z-index: 1;
+        }
+  
+        .dropdown-trigger:hover .dropdown-content {
+          display: block;
+        }
+
+      </style>
+
   </head>
   <body>
     <!-- Top Navigation -->
@@ -574,7 +594,7 @@
 
 
                 <!--Add the name of the bot here -->
-                <span class="chat_header_title">MiWo-Voice-Bot</span>
+                <span class="chat_header_title">MiWo Voice Bot</span>
                 <span class="dropdown-trigger" href='#' data-target='dropdown1'>
                     <i class="material-icons">
                         more_vert
@@ -600,7 +620,7 @@
             <div class="keypad">
                 <textarea id="userInput" placeholder="Type a message..." class="usrInput" value="not set"></textarea>
                 <div id="sendButton"><i class="fa fa-microphone" onclick="record()" aria-hidden="true"></i></div>
-                <div>select language: <button id="hin" onclick="langu()" style="width:55px;height:20px;border-radius: 10px;background-color:#8f00cc;color: white;">Hindi</button> <button id="eng" onclick="langu1()" style="width:70px;height:20px;border-radius: 10px;background-color: #8f00cc;color: white;">English</button> </div>
+                <div class="langOptions">Select Language: <button id="hin" onclick="langu()" style="width:55px;height:20px;border-radius: 10px;background-color:#8f00cc;color: white;">Hindi</button> <button id="eng" onclick="langu1()" style="width:70px;height:20px;border-radius: 10px;background-color: #8f00cc;color: white;">English</button> </div>
 
             </div>
         </div>
