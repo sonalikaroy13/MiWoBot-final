@@ -12,52 +12,21 @@ stories:
   - action: utter_district
   - intent: district
   - action: utter_help
+  - intent: goodbye
+  - action: utter_goodbye
 
 - story: delhi job search path hindi
   steps:
   - intent: greet_hindi
   - action: utter_greet_hindi
-  - intent: searching_for_job
-  - action: utter_searching_for_job
-  - intent: Delhi
-  - action: utter_district
-  - intent: district
-  - action: utter_help
-# ////////////////////////
-- story: delhi job search path 1
-  steps:
-  - intent: greet_hindi
-  - action: utter_greet_hindi
-  - intent: ask_mood_hindi
-  - action: utter_greet_hindi
+  - intent: searching_for_job_hindi
+  - action: utter_searching_for_job_hindi
+  - intent: Delhi_hindi
+  - action: utter_district_hindi
+  - intent: district_hindi
+  - action: utter_help_hindi
   - intent: goodbye_hindi
-  - action: utter_greet_hindi
-  - intent: affirm_hindi
-  - action: utter_greet_hindi
-
-
-# - story: delhi job search path
-#   steps:
-#   - intent: greet_hindi
-#   - action: utter_greet_hindi
-#   - intent: searching_for_job
-#   - action: utter_searching_for_job
-#   - intent: Delhi
-#   - action: utter_district
-#   - intent: district
-#   - action: utter_help
-#
-#
-# - story: delhi job search path
-#   steps:
-#   - intent: greet_hindi
-#   - action: utter_greet_hindi
-#   - intent: searching_for_job
-#   - action: utter_searching_for_job
-#   - intent: Delhi
-#   - action: utter_district
-#   - intent: district
-#   - action: utter_help
+  - action: utter_goodbye
 
 #csv file NGOs
 #- story: user query
@@ -191,6 +160,30 @@ stories:
   - action: utter_AABY
   - intent: deny
   - action: utter_goodbye
+
+- story: scheme AABY yes hindi
+  steps:
+  - intent: greet_hindi
+  - action: utter_greet_hindi
+  - intent: schemes_hindi
+  - action: utter_schemes_hindi
+  - intent: AABY_hindi
+  - action: utter_AABY_hindi
+  - intent: affirm_hindi
+  - action: utter_scheme_help_hindi
+  - intent: goodbye_hindi
+  - action: utter_goodbye_hindi
+
+- story: scheme AABY no hindi
+  steps:
+  - intent: greet_hindi
+  - action: utter_greet_hindi
+  - intent: schemes_hindi
+  - action: utter_schemes_hindi
+  - intent: AABY_hindi
+  - action: utter_AABY_hindi
+  - intent: deny_hindi
+  - action: utter_goodbye_hindi
 
 - story: scheme RSBY yes
   steps:

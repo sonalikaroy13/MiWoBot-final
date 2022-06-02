@@ -21,6 +21,12 @@ nlu:
     - what is your job?
     - how do you work?
 
+- intent: greet_hindi
+  examples: |
+    - नमस्ते
+    - हेलो
+    - क्या हाल है?
+
 - intent: searching_for_job
   examples: |
     - 1
@@ -38,6 +44,12 @@ nlu:
     - Please find me a job
     - I am not getting any job
 
+- intent: searching_for_job_hindi
+  examples: |
+    - 1    
+    - नौकरी की तलाश
+    - नौकरी
+
 - intent: problem_in_current_job
   examples: |
     - 2
@@ -53,6 +65,7 @@ nlu:
     - I am having some problems in my current organization
     - i have issues with my employer
     - I am not getting my salary
+
 - intent: schemes
   examples: |
     - 3
@@ -83,12 +96,19 @@ nlu:
     - I need a home to live
     - none
     - other problem
+
 - intent: Delhi
   examples: |
     - Delhi
     - Dilli
     - delhi
     - dilli
+
+- intent: Delhi_hindi
+  examples: |
+    - दिल्ली
+    - देहली
+    - देलही
 
 - intent: Outside_Delhi
   examples: |
@@ -142,24 +162,22 @@ nlu:
     - West Delhi
     - Shahadra district
 
-- intent: greet_hindi
-  examples: |
-    - नमस्ते
-    - क्या हाल है?
+- intent: district_hindi
+  examples: | 
+    - नई दिल्ली
+    - मध्य दिल्ली
+    - पूर्वी दिल्ली
+    - उत्तरी दिल्ली
+    - उत्तर पूर्वी दिल्ली
+    - उत्तर पश्चिम दिल्ली
+    - दक्षिण दिल्ली
+    - दक्षिण पूर्व दिल्ली
+    - दक्षिण पश्चिम दिल्ली
+    - पश्चिमी दिल्ली
+    - शाहदरा जिला
+
 #    - [district]{"entity":"column","value":"district"}
 #    - [district]{"entity":"column","value":"district"} Delhi
-- intent: get_weather_hindi
-  examples: |
-    - मौंसम क्या है
-    - बाहर कैसा है
-    - मौसम की रिपोर्ट
-    - क्या बारिश की कोई संभावना नागपुर में है?
-    - आज यह बाहर की तरह क्या है
-    - बाहर का तापमान क्या है?
-    - नागपुर में मौसम कैसा है
-    - मुंबई में मौसम क्या है
-    - मौसम कैसा है पटना
-    - शेहोन की मौसम रिपोर्ट को व्हाट्सएप करें
 
 - intent: ask_mood_hindi
   examples: |
@@ -170,22 +188,6 @@ nlu:
     - आप ठिक हो
     - क्या चल रहा है
 
-- intent: goodbye_hindi
-  examples: |
-    - अलविदा
-    - बाद में मिलते है
-    - फिर मिलते हैं
-    - बाई
-
-- intent: affirm_hindi
-  examples: |
-    - हाँ
-    - वास्तव में
-    - बेशक
-    - वह अच्छा प्रतीत होता है
-    - सही बात
-    - ठीक
-    - अच्छा है
 
 #- intent: csv
 #  examples: |
@@ -254,6 +256,13 @@ nlu:
     - aam aadmi
     - aam aadmi bima yojna
     - aam aadmi yojna
+
+- intent: AABY_hindi
+  examples: | 
+    - आम आदमी बीमा योजना
+    - आम आदमी
+    - बीमा योजना
+
 - intent: RSBY
   examples: |
     - rashtriya swasthya bima yojana
@@ -280,6 +289,7 @@ nlu:
     - start again
     - sorry
     - please go back to first question
+
 - intent: goodbye
   examples: |
     - good afternoon
@@ -298,6 +308,31 @@ nlu:
     - okay
     - ok
     - ok thanks
+
+- intent: goodbye_hindi
+  examples: |
+    - अलविदा
+    - बाद में मिलते है
+    - फिर मिलते हैं
+    - बाई
+    - धन्यवाद
+    - ठीक है
+
+- intent: affirm_hindi
+  examples: |
+    - हाँ
+    - वास्तव में
+    - बेशक
+    - वह अच्छा प्रतीत होता है
+    - सही बात
+    - ठीक
+    - अच्छा है
+
+- intent: deny_hindi
+  examples: |
+    - नहीं
+    - ना
+    
 - intent: affirm
   examples: |
     - yes
@@ -307,6 +342,7 @@ nlu:
     - that sounds good
     - correct
     - yup
+
 - intent: deny
   examples: |
     - no
@@ -317,6 +353,8 @@ nlu:
     - no way
     - not really
     - no thanks
+
+
 - intent: bot_challenge
   examples: |
     - are you a bot?

@@ -2,38 +2,51 @@ version: "3.1"
 
 intents:
   - greet
+  - greet_hindi
   - goodbye
   - bot_challenge
   - searching_for_job
+  - searching_for_job_hindi
   - problem_in_current_job
   - Delhi
   - Outside_Delhi
+  - Delhi_hindi
+  - Kanpur
+  - Chennai
+  - Mumbai
+  - Bangalore
+  - Kolkata
+  - Others
   - district
+  - district_hindi
   - acco_other
   - law_maternity
   - law_wages
   - law_compensation
   - law_remuneration
   - law_minimum
+  - law_interstate_migrant
   - affirm
   - deny
   - schemes
+  - schemes_hindi
   - IGNOAP
   - AABY
+  - AABY_hindi
   - RSBY
   - MGBBY
   - go_back
-  - greet_hindi
   - ask_mood_hindi
   - goodbye_hindi
   - affirm_hindi
+  - deny_hindi
 
 responses:
   utter_greet:
   - text: "What's your issue? : 1 - Searching for a job - or 2 - Problems in current job - or 3 - Know about Government Schemes - or 4 - Accommodation or other. Please select one of the four options."
 
   utter_searching_for_job:
-  - text: "Which area are you located in? - Delhi or Outside Delhi?"
+  - text: "Which area are you located in? - Delhi, Kanpur, Kolkata, Bangalore, Mumbai, Chennai or Others?"
 
   utter_district:
   - text: "Please tell us your district? - Central, East, North, North East, North West, South, South East, South West, West or New Delhi"
@@ -99,9 +112,28 @@ responses:
   - text: "I am a bot, powered by Rasa."
 
   utter_greet_hindi:
-  - text: "नमस्ते!"
+  - text: "आपकी समस्या क्या है? : 1 - नौकरी की तलाश - या 2 - वर्तमान नौकरी में समस्याएं - या 3 - सरकारी योजनाओं के बारे में जानें - या 4 - आवास व अन्य। कृपया चार विकल्पों में से एक का चयन करें।"
 
+  utter_searching_for_job_hindi:
+  - text: "आप किस क्षेत्र में स्थित हैं? - दिल्ली, कानपुर, कोलकाता, बैंगलोर, मुंबई, चेन्नई या अन्य?"
 
+  utter_district_hindi:
+  - text: "आप किस जिले में स्थित हैं?? - मध्य, पूर्व, उत्तर, उत्तर पूर्व, उत्तर पश्चिम, दक्षिण, दक्षिण पूर्व, दक्षिण पश्चिम, पश्चिम या नई दिल्ली"
+
+  utter_help_hindi:
+  - text: "कृपया निम्नलिखित हेल्पलाइन नंबर - 1800 833 9020 पर संपर्क करें: या अपने जिला श्रम कल्याण केंद्र से संपर्क करें - वे आपकी मदद करेंगे! - इसके विवरण के लिए - दिए गए लिंक पर क्लिक करें - https://labour.delhi.gov.in/content/set-district-offices"
+
+  utter_schemes_hindi:
+  - text: "आप किस सरकारी योजना के बारे में जानना चाहते हैं? इंदिरा गांधी राष्ट्रीय वृद्धावस्था पेंशन योजना, आम आदमी बीमा योजना, राष्ट्रीय स्वास्थ्य बीमा योजना, या महात्मा गांधी बंकर बीमा योजना"
+
+  utter_AABY_hindi:
+  - text: "आम आदमी बीमा योजना उन गरीब परिवारों को सामाजिक सुरक्षा प्रदान करती है जो आर्थिक रूप से सुरक्षित नहीं हैं। इस योजना के तहत, कुछ व्यावसायिक समूहों के अंतर्गत आने वाले व्यक्तियों के लिए विकलांगता, आकस्मिक मृत्यु और प्राकृतिक मृत्यु कवर प्रदान किया जाता है। इस योजना के लिए पात्र होने के लिए आपको आवश्यकता होगी 18 से 59 वर्ष की आयु के लिए। आप गरीबी रेखा से नीचे या उससे थोड़ा ऊपर हो सकते हैं। आपको एक व्यावसायिक या व्यावसायिक समूह का भी हिस्सा होना चाहिए। इसके माध्यम से, आपके नामांकित व्यक्ति को तीस हजार रुपये मिलेंगे यदि आप प्राकृतिक कारण से मर जाते हैं कारण। यदि यह एक आकस्मिक मृत्यु है या एक स्थायी पूर्ण विकलांगता है, तो पचहत्तर हजार रुपये की राशि दी जाएगी। यदि आप आंशिक रूप से विकलांग हैं, तो आपको सैंतीस हजार पांच सौ रुपये मिलेंगे। आपके बच्चे भी इसके लिए पात्र होंगे प्रति बच्चा एक सौ रुपये प्रति माह की छात्रवृत्ति। क्या आप इस योजना में रुचि रखते हैं?"
+
+  utter_scheme_help_hindi:
+  - text: "आप राष्ट्रीय हेल्पलाइन नंबर: 1800 833 9020, या अपने नोडल अधिकारी, डॉ राजेंद्र धर, 9810135369, या 011 23967495 पर संपर्क कर सकते हैं, या श्रम आयोग के योजना का फॉर्म विवरण प्राप्त करने के लिए इस लिंक पर जा सकते हैं: 'https://clc.gov.in/clc/Regionaloffice/NewDelhi/who-s-who'"
+
+  utter_goodbye_hindi:
+  - text: "मेरी सेवाओं का उपयोग करने के लिए धन्यवाद, आपका दिन शुभ हो!"
 
 session_config:
   session_expiration_time: 60
