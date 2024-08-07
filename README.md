@@ -1,4 +1,4 @@
-# AirbotFinal
+# MiWo Bot
 This is the bot integrated with MiWo UI and with voice as well text chat support.
 
 1. create one file into the working directory with name "models"
